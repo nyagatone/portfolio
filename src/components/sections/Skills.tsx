@@ -33,15 +33,15 @@ export function Skills() {
               transition={{ delay: i * 0.1 }}
               className="group"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 bg-[#F9F9F9] border-[3px] border-black p-4 md:p-6 shadow-[4px_4px_0px_0px_#000000] hover:shadow-[0_0_0_0_#000] hover:translate-x-1 hover:translate-y-1 transition-all duration-200">
-                <span className="font-black text-2xl md:text-3xl w-40 uppercase shrink-0 transition-colors group-hover:text-accent group-hover:shadow-black [text-shadow:1px_1px_0_#000] text-black">
+              <div className="flex flex-col lg:flex-row lg:items-center gap-4 md:gap-6 bg-[#F9F9F9] border-[3px] border-black p-4 md:p-6 shadow-[4px_4px_0px_0px_#000000]">
+                <span className="font-black text-xl md:text-2xl w-full lg:w-48 uppercase shrink-0 text-black">
                   {skill.name}
                 </span>
-                <div className="flex-1 flex gap-2 w-full">
+                <div className="flex-1 flex gap-1.5 md:gap-2 w-full">
                   {Array.from({ length: 5 }).map((_, j) => (
                     <div 
                       key={j} 
-                      className={`h-8 sm:h-12 w-full border-[2px] border-black transition-colors duration-300 ${j < skill.level ? 'bg-black' : 'bg-transparent'}`}
+                      className={`h-6 md:h-8 w-full border-[2px] border-black ${j < skill.level ? 'bg-black' : 'bg-transparent'}`}
                     />
                   ))}
                 </div>

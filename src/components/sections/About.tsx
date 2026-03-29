@@ -23,7 +23,7 @@ export function About() {
             </p>
           </div>
         </div>
-        
+
         <div className="lg:col-span-8 flex flex-col gap-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -33,8 +33,8 @@ export function About() {
             <BrutalBox className="p-8 md:p-10 bg-white shadow-[8px_8px_0_#000] transform -rotate-1">
               <h3 className="text-3xl font-black mb-6 font-sans tracking-tight border-b-4 border-black pb-4">10年以上のWeb制作体験</h3>
               <p className="font-bold leading-relaxed text-lg">
-                デザインから実装まで一気通貫で対応可能なシニアフロントエンドエンジニア。<br/><br/>
-                メディア、EC、SaaSなど多様な現場における経験を持ち、デザインの意図を正確にコードに落とし込みます。<br/>
+                デザインから実装まで一気通貫で対応可能なシニアフロントエンドエンジニア。<br /><br />
+                メディア、EC、SaaSなど多様な現場における経験を持ち、デザインの意図を正確にコードに落とし込みます。<br />
                 また、Notionを活用したプロジェクト管理やドキュメント構築も得意としています。
               </p>
             </BrutalBox>
@@ -44,7 +44,7 @@ export function About() {
             <h3 className="font-mono text-2xl font-black mb-8 flex items-center gap-4 bg-black text-white inline-block px-4 py-2 rotate-2">
               EXPERIENCE
             </h3>
-            <div className="grid gap-6 pl-4 md:pl-8 border-l-[4px] border-black ml-4">
+            <div className="relative border-l-[4px] border-black ml-4 md:ml-8 flex flex-col gap-6 py-4">
               {experiences.map((exp, i) => (
                 <motion.div
                   key={exp.company}
@@ -52,17 +52,17 @@ export function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="relative -left-8 md:-left-12"
+                  className="relative pl-8 md:pl-10"
                 >
                   {/* Decorative dot */}
-                  <div className="w-6 h-6 border-[3px] border-black bg-accent absolute top-1/2 -translate-y-1/2 -left-3 md:-left-1.5 z-10" />
-                  
-                  <BrutalBox hoverEffect className="ml-10 p-6 flex flex-col md:flex-row justify-between md:items-center gap-4 group bg-[#F9F9F9]">
+                  <div className="w-6 h-6 border-[3px] border-black bg-accent absolute top-1/2 -translate-y-1/2 -left-[14px] z-10 bg-white" />
+
+                  <BrutalBox className="p-6 flex flex-col md:flex-row justify-between md:items-start gap-4 bg-white">
                     <div>
-                      <h4 className="font-black text-xl mb-1">{exp.company}</h4>
+                      <h4 className="font-black text-xl mb-2">{exp.company}</h4>
                       <span className="font-mono text-sm font-bold opacity-70 bg-gray-200 px-2 py-0.5">{exp.role}</span>
                     </div>
-                    <div className="bg-black text-white px-3 py-1 font-mono font-bold text-sm uppercase">
+                    <div className="bg-black text-white px-3 py-1 font-mono font-bold text-sm uppercase shrink-0">
                       {exp.period}
                     </div>
                   </BrutalBox>

@@ -38,7 +38,7 @@ export function Works() {
             >
               <BrutalBox hoverEffect className="min-h-[300px] p-6 flex flex-col group bg-white relative shadow-[6px_6px_0_#000]">
                 {/* Index tag over the border */}
-                <div className="absolute -top-5 -left-5 bg-accent border-[2px] border-black px-3 py-1 font-mono font-black text-lg z-10 w-12 text-center shadow-[2px_2px_0_#000]">
+                <div className="absolute -top-5 -left-5 bg-white border-[2px] border-black px-3 py-1 font-mono font-black text-lg z-10 w-12 text-center shadow-[2px_2px_0_#000]">
                   0{i + 1}
                 </div>
                 

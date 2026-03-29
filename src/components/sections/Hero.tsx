@@ -58,7 +58,7 @@ export function Hero() {
             transition={{ delay: 0.3 }}
             className="relative"
           >
-            <BrutalBox hoverEffect className="p-4 flex items-center gap-4 bg-black text-white self-end relative z-20">
+            <BrutalBox className="p-4 flex items-center gap-4 bg-black text-white self-end relative z-20">
               <span className="font-mono text-sm uppercase font-bold tracking-widest">Scroll to explore</span>
               <ArrowDownRight strokeWidth={3} className="w-6 h-6 text-accent" />
             </BrutalBox>
