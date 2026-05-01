@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { BrutalBox } from "@/components/ui/brutal-box";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { worksData } from "@/data/works";
 
 export function Works() {
@@ -36,10 +37,11 @@ export function Works() {
                   </div>
                   
                   <div className="w-full aspect-[4/3] bg-[#F9F9F9] border-[2px] border-black mb-8 flex items-center justify-center relative overflow-hidden group-hover:border-dashed p-4 transition-colors group-hover:bg-[#ccff00]">
-                    <img 
+                    <Image 
                       src={work.image} 
                       alt="" 
-                      className="absolute w-[80%] h-[80%] object-contain drop-shadow-[8px_8px_0_#000] transition-transform duration-300 group-hover:scale-110" 
+                      fill
+                      className="object-contain p-6 drop-shadow-[8px_8px_0_#000] transition-transform duration-300 group-hover:scale-110" 
                     />
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 pointer-events-none" />
                     {/* Subtle hover reveal element */}
